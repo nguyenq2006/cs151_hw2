@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">What\'s For Dinner</string>
+    <string name="grocery_list">Grocery Shopping </string>
+    <string name="title_recipe_list">Recipes</string>
+    <string name="meals">Meals Plan</string>
+    <string name="title_recipe_detail">Recipe Detail</string>
+</resources>

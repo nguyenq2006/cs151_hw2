@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/breakfast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakfast"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"/>
+    <Spinner
+        android:id="@+id/meal_selection1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lunch"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:paddingTop="10dp"/>
+    <Spinner
+        android:id="@+id/meal_selection2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:id="@+id/dinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinner"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:paddingTop="10dp"/>
+    <Spinner
+        android:id="@+id/meal_selection3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+</LinearLayout>

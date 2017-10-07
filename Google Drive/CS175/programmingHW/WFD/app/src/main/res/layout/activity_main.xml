@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quocpnguyen.wfd.activities.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/wfd" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:paddingLeft="30dp">
+
+        <ImageView
+            android:id="@+id/meals"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:src="@drawable/plan"
+            android:onClick="viewMeals"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Meals"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/recipes"
+            android:layout_width="130dp"
+            android:layout_height="79dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:src="@drawable/cook_book"
+            android:layout_marginLeft="60dp"
+            android:onClick="viewRecipes"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="Recipes"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/groceries"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:src="@drawable/groceries"
+            android:onClick="viewGroceries"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="Groceries"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/newDish"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:src="@drawable/add"
+            android:layout_marginLeft="60dp"
+            android:onClick="newDish"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:text="New Dish"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="30dp"/>
+
+    </GridLayout>
+
+</RelativeLayout>
